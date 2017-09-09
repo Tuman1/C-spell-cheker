@@ -1,0 +1,18 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis is the largest word in dictionary.
+1.  getrusage() returns resource usage measures.
+2.  16 members
+3.  Maby it was done to track currant values in "befor" and "after" structures.
+4.      For loop is initialized with statement that creates a variable c and put char from text into it. Due to "c != EOF"  and "c = fgetc(fp)" statements
+    all characters will be read from input text. During execution of For loop a few counters will be changed: index - length of current word,
+    words - number of words, misspellings - words that have error. Current word is located in array word[length + 1].
+        There are a few check statments. First statement check is character letter or apostrophes and adding character to the array "word".
+    If word larger than 45 letters, other letters are omitted, during to "while ((c = fgetc(fp)) != EOF && isalpha(c));". At the end of the statement that check size of the word
+    index counter is reset for the new word.
+        Next "esle if" statment check for the digits and omitt them.
+        Last "esle if" statment is checking for the end of the word and make check of the word.
+5.  We can't use scanf() because we need to check every character to ensure that there is no any forbidden character.
+6.  Because we have been assumed that inputs dictionary and word must be accessible from all modules. Thats why the are static variables.
+7.  I have used "trie" data structure. There are  two variable in each node: in_word and array of pointers to children nodes.
+8.  It was about 0.14 second.
+9.  I didn't.
+10. I would like to replace memset() with macro if it's possible.
